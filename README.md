@@ -13,23 +13,23 @@ In this audit, they were looking for the following results:
 
 ## Resources
 
-Data Source: election_results.csv
+Data Source: [election data](resources/election_results.csv)
 
 Software used: Python 3.8.9, Visual Studio Code
 
 ## Results
 
 From our analysis we found the following results:
-1. Using a for loop, seen in line 43 and 47 of [](PyPoll_Challenge.py) which filtered through the data from [](resources/election_results.csv), we  found that there were 369,700 votes cast in the election.
+1. Using a for loop (seen in line 43 and 47 of [code script](PyPoll_Challenge.py)), we  found that there were 369,700 votes cast in the election.
 
-2. There were three counties in this precinct: Jefferson, Denver and Araphoe. Using for loops nested with if statements (found in line 96-107 of [](PyPoll_Challenge,py), we found the vote count and the percentage of the total vote for each county. 
+2. There were three counties in this precinct: Jefferson, Denver and Araphoe. Using for loops nested with if statements (found in line 96-107 of [code script](PyPoll_Challenge,py)), we found the vote count and the percentage of the total vote for each county. 
 Jefferson: 10.5% (38,855)
 Denver: 82.8% (306,055)
 Arapahoe: 6.7% (24,801)
 
 3. From this information, we were able to determine that Denver was the county that had the largest voter turnout in this election.
 
-4. Then we looked to the candidate data in order to determine the vote count and percentage of the total vote for each candidate who receieved votes. Similar to our county analysis, we ran a for for loop with a nested if statement(found in lines 129-156 in PyPoll_Challenge.py) in order to determine this information. Our results were as follows:
+4. Then we looked to the candidate data in order to determine the vote count and percentage of the total vote for each candidate who receieved votes. Similar to our county analysis, we ran a for for loop with a nested if statement (found in lines 129-156 of [code script](PyPoll_Challenge.py)) in order to determine this information. Our results were as follows:
 Charles Casper Stockham received 23% of the vote with 85,213 votes
 Diana DeGette received 73.8% of the vote with 272,892 votes
 Raymon Anthony Doane received 3.1% of the vote with 11,606 votes
@@ -37,11 +37,7 @@ Raymon Anthony Doane received 3.1% of the vote with 11,606 votes
 5. Then from these results we were able to determine the winner of the election. 
 The winner of the election was Diana DeGette, with 272,892 votes which was 73.8% of the total vote count.
 
-Using the txt_file.write function, we were able to save these results to our election_analysis.txt file.
-
-You can see this from this link: 
-
-[](analysis/election_analysis.txt)
+Using the txt_file.write function, we were able to save these results to our [text file](analysis/election_analysis.txt)
 
 Or you can see below in this image:
 
